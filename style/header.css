@@ -1,0 +1,283 @@
+.header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 80px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-inline: 15px;
+  z-index: 3;
+  background: #fff;
+}
+
+.header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header .main-logo {
+  width: 15%;
+}
+
+.header .main-logo img.logo {
+  width: 100%;
+}
+
+.header .notification-lang-profile-block {
+  direction: ltr;
+}
+
+.header .notification-lang-profile-block a.language-header {
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #158285;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.header .notification-lang-profile-block a.language-header i {
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+}
+
+.header .notification-lang-profile-block .notification-block {
+  position: relative;
+}
+
+.header .notification-lang-profile-block .notification-block span.notification-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #158285;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 6px;
+  position: relative;
+  cursor: pointer;
+}
+
+.header .notification-lang-profile-block .notification-block span.notification-header i {
+  cursor: pointer;
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+}
+
+.header .notification-lang-profile-block .notification-block span.notification-header small.counter {
+  position: absolute;
+  background-color: red;
+  color: #fff;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  /* padding: 5px; */
+  left: -12px;
+  top: -8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .notification-lang-profile-block .notification-block .notification-body {
+  position: absolute;
+  top: 3.5rem;
+  left: 0;
+  width: 20rem;
+  background-color: #fff;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  border-radius: 0 0 1rem 1rem;
+}
+
+.header .notification-lang-profile-block .notification-block .notification-body .card {
+  border: none;
+  overflow-y: scroll;
+  height: 0;
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+}
+
+.header .notification-lang-profile-block .notification-block .notification-body .card .card-header {
+  border-bottom: none;
+  direction: rtl;
+  color: #158285;
+}
+
+.header .notification-lang-profile-block .notification-block .notification-body .card ul {
+  overflow-x: hidden;
+}
+
+.header .notification-lang-profile-block .notification-block .notification-body .card ul li {
+  list-style-type: none;
+  text-align: right;
+  -webkit-padding-end: 0.5rem;
+          padding-inline-end: 0.5rem;
+  padding-block: 1rem;
+  cursor: pointer;
+}
+
+.header .notification-lang-profile-block .notification-block .notification-body .card ul li:not(:last-child) {
+  border-bottom: 1px solid #f7f7f7;
+}
+
+.header .notification-lang-profile-block .notification-block .notification-body .card ul li p {
+  color: gray;
+}
+
+.header .notification-lang-profile-block .notification-block .notification-body .card ul li p span.name {
+  font-weight: bold;
+}
+
+.header .notification-lang-profile-block .notification-block .notification-body .card-footer {
+  text-align: center;
+  color: #158285;
+  text-decoration: underline;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.header .notification-lang-profile-block .profile-block {
+  position: relative;
+}
+
+.header .notification-lang-profile-block .profile-block .profile-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 16rem;
+}
+
+.header .notification-lang-profile-block .profile-block .profile-header .profile-pic-wrapper {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.header .notification-lang-profile-block .profile-block .profile-header .profile-pic-wrapper img {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.header .notification-lang-profile-block .profile-block .profile-header h2 {
+  -webkit-margin-start: 15px;
+          margin-inline-start: 15px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+  overflow: hidden;
+}
+
+.header .notification-lang-profile-block .profile-block .profile-header h2 span {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #999;
+}
+
+.header .notification-lang-profile-block .profile-block .profile-body {
+  position: absolute;
+  width: 195px;
+  height: 0;
+  background: #fff;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  top: 4.4rem;
+  border-radius: 0 0 6px 6px;
+  overflow: hidden;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.header .notification-lang-profile-block .profile-block .profile-body ul.navigation {
+  position: relative;
+  padding-left: 0;
+  background-color: #fff;
+}
+
+.header .notification-lang-profile-block .profile-block .profile-body ul.navigation li {
+  list-style: none;
+  margin: 15px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  cursor: pointer;
+  direction: rtl;
+}
+
+.header .notification-lang-profile-block .profile-block .profile-body ul.navigation li a {
+  text-decoration: none;
+  font-style: 0.5rem;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  color: #158285;
+}
+
+.header .notification-lang-profile-block .profile-block .profile-body ul.navigation li i {
+  font-size: 1.2rem;
+  margin-inline: 15px;
+  color: #158285;
+}
+
+.header .notification-lang-profile-block .profile-block #toggle:checked ~ .profile-body {
+  height: 60px;
+  opacity: 1;
+}
+
+#toggle-notification:checked ~ .notification-body .card {
+  height: 25rem;
+  opacity: 1;
+}
+/*# sourceMappingURL=header.css.map */

@@ -1,0 +1,313 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&family=Oswald:wght@200;300;400;500;600;700&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap");
+$teal-color: #158285;
+$white-color: #fff;
+$orange-color: #f7941d;
+$green-color: #2bb574;
+.teal-color {
+  color: $teal-color;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Cairo", sans-serif;
+}
+
+body {
+  text-transform: capitalize;
+  background-color: #f5f5f5;
+  direction: rtl;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+/* button */
+button {
+  &:active,
+  &:focus {
+    box-shadow: none !important;
+  }
+}
+
+.form-label {
+  margin-inline-start: 0.5rem;
+}
+input[type="text"],
+input[type="url"],
+input[type="date"],
+input[type="password"],
+input[type="email"],
+input[type="file"],
+textarea.form-control,
+.form-select {
+  border-radius: 1rem;
+  &:focus {
+    box-shadow: none;
+    border: 1px solid #ced4da;
+  }
+}
+input[type="date"] {
+  -webkit-rtl-ordering: visual;
+}
+input[type="date"].ng-valid {
+  -webkit-rtl-ordering: logical;
+}
+textarea.form-control {
+  resize: none;
+}
+
+/* X in input */
+.input-remove-data {
+  position: relative;
+  input {
+    position: relative;
+  }
+  i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) scale(0.9);
+    font-size: 15px;
+    transition: all 0.3s;
+    &:hover {
+      transform: translateY(-50%) scale(1);
+    }
+  }
+}
+button.btn-search {
+  background-color: #f3f6f9;
+  color: $teal-color;
+  border: 0.5px solid $teal-color;
+  border-radius: 1rem;
+  &:hover,
+  &:focus {
+    color: $teal-color;
+    box-shadow: none !important;
+  }
+}
+
+/* content-container */
+
+@keyframes onPageLoad {
+  0% {
+    opacity: 0;
+    transform: translateY(140px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.content-container {
+  margin-top: 2rem;
+  animation: onPageLoad 0.7s forwards ease-in;
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: 5px 5px 30px 5px rgba(82, 63, 105, 0.05);
+
+  .content-container__header {
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 20px;
+      border-bottom: 1px solid #ebedf3;
+      h3 {
+        color: $teal-color;
+      }
+    }
+    .title {
+      font-weight: 600;
+      font-size: 1.3rem;
+      color: #181c32;
+      margin: 0;
+    }
+  }
+
+  .content-container__body {
+    padding: 15px 20px;
+  }
+  .content-container__footer {
+    .footer {
+      padding: 15px 20px;
+      border-top: 1px solid #ebedf3;
+      display: flex;
+    }
+    button {
+      min-width: 120px;
+    }
+  }
+}
+
+button {
+  &:active,
+  &:focus {
+    box-shadow: none !important;
+  }
+}
+button.btn-search {
+  background-color: #f3f6f9;
+  color: $teal-color;
+  border: 0.5px solid $teal-color;
+  border-radius: 1rem;
+  &:hover,
+  &:focus {
+    color: $teal-color;
+    box-shadow: none !important;
+  }
+}
+/* Save btn */
+.save-btn {
+  margin-inline-end: 1rem;
+  border: transparent;
+  background: linear-gradient(
+    90deg,
+    rgba(21, 130, 133, 1) 0%,
+    rgba(35, 161, 164, 1) 79%
+  );
+  color: $white-color;
+  position: relative;
+  overflow: hidden;
+  &::before {
+    content: "";
+    position: absolute;
+    height: 200px;
+    width: 20px;
+    background-color: #f3f3f3;
+    box-shadow: 0 0 10px #fff;
+    filter: blur(1px);
+    opacity: 0.5;
+    top: -50px;
+    transform: rotate(-20deg) translateX(-90px);
+    animation: shining 3s ease-in-out infinite forwards;
+  }
+  &:hover {
+    &::before {
+      transform: rotate(-20deg) translateX(140px);
+    }
+  }
+}
+button:active,
+button:focus,
+button:hover {
+  color: $white-color;
+  box-shadow: none !important;
+}
+@keyframes shining {
+  0% {
+    transform: rotate(-20deg) translateX(-90px);
+  }
+  100% {
+    transform: rotate(-20deg) translate(140px, 70px);
+  }
+}
+
+/* back btn */
+.back-btn {
+  background-color: #ddd;
+  i {
+    color: $teal-color;
+    transition: all 0.3s ease;
+  }
+  span {
+    color: $teal-color;
+  }
+
+  &:focus,
+  &:active,
+  &:hover {
+    background-color: #ddd;
+    box-shadow: none !important;
+    i {
+      transform: translateX(5px);
+    }
+  }
+}
+.card {
+  border-radius: 1rem;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  height: 20rem;
+  position: relative;
+  transition: transform 0.3s ease;
+  &:hover {
+    transform: scale(1.05);
+  }
+  .colored-bg {
+    background-color: #2bb574;
+    border-radius: 1rem 1rem 0 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    small.date {
+      position: absolute;
+      right: 1rem;
+      top: 0.5rem;
+    }
+    img {
+      width: 6rem;
+      height: 6rem;
+      border-radius: 50%;
+      border: 4px solid #2bb574;
+      transform: translateY(25%);
+    }
+  }
+  .card-body {
+    span.friend-name {
+      display: flex;
+      justify-content: center;
+      margin-top: 0.5rem;
+      color: #2bb574;
+      font-weight: bold;
+    }
+    span.interests {
+      display: inline-block;
+      color: gray;
+      font-size: 15px;
+      margin-block-start: 1rem;
+    }
+    ul.circled-items {
+      list-style: none;
+      padding-left: 0;
+      b.title {
+        font-size: 15px;
+        color: $orange-color;
+      }
+      li {
+        display: inline-block;
+        padding: 4px;
+        border-radius: 15px;
+        color: #2bb574;
+        border: 1px solid #2bb574;
+        font-size: 10px;
+        margin-bottom: 5px;
+      }
+    }
+    small {
+      color: gray;
+    }
+  }
+  .card-footer {
+    display: flex;
+    justify-content: center;
+    border-radius: 0 0 1rem 1rem;
+    border: none;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(90deg, #dc3646 50%, #1a8755 50%);
+    button {
+      color: #fff;
+      width: 100%;
+      font-size: 18px;
+      i {
+          transition: all .3s ease;
+      }
+      &:hover {
+          i {
+              transform: scale(1.1);
+          }
+      }
+    }
+  }
+}

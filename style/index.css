@@ -1,0 +1,99 @@
+.profile-block {
+  position: relative;
+}
+
+.profile-block .profile-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 16rem;
+}
+
+.profile-block .profile-header .profile-pic-wrapper {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.profile-block .profile-header .profile-pic-wrapper img {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.profile-block .profile-header h2 {
+  -webkit-margin-start: 15px;
+          margin-inline-start: 15px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+  overflow: hidden;
+}
+
+.profile-block .profile-header h2 span {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #999;
+}
+
+.profile-block .profile-body {
+  position: absolute;
+  width: 195px;
+  height: 0;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  top: 4.4rem;
+  border-radius: 0 0 6px 6px;
+  overflow: hidden;
+  z-index: -1;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.profile-block .profile-body ul.navigation {
+  position: relative;
+  padding-left: 0;
+}
+
+.profile-block .profile-body ul.navigation li {
+  list-style: none;
+  margin: 15px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+.profile-block .profile-body ul.navigation li a {
+  text-decoration: none;
+  font-style: 0.5rem;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.profile-block .profile-body ul.navigation li i {
+  font-size: 1.2rem;
+  margin-inline: 15px;
+}
+
+.profile-block #toggle:checked ~ .profile-body {
+  height: 160px;
+  opacity: 1;
+}
+/*# sourceMappingURL=index.css.map */

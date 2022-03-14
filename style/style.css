@@ -1,0 +1,459 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  direction: rtl;
+  font-family: 'Cairo', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+ul.list {
+  position: absolute;
+  top: 4rem;
+  left: 0rem;
+  background-color: #fff;
+  width: 11rem;
+  height: 0rem;
+  border-radius: 0 0 1rem 1rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  padding: 0;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+#toggle-list {
+  display: none;
+}
+#toggle-list:checked ~ ul.list {
+  height: 9rem;
+}
+nav ul li .carousel-block {
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+}
+.cards-block,
+.multaqa-goals-block,
+.workshop-block,
+.success-partners-block {
+  margin-bottom: 8rem;
+}
+
+.cards-block {
+  margin: 3rem 0;
+  z-index: 2;
+}
+
+.cards-block .card-wrapper {
+  width: 100%;
+  height: 18rem;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  padding: 1rem;
+  border-radius: 1rem;
+  overflow-y: scroll;
+  position: relative;
+  transform: scale(0.9);
+  transition: all 0.3s ease;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.cards-block .card-wrapper i {
+  font-size: 30px;
+  color: #f7941d;
+  transition: all 0.3s ease;
+}
+
+.cards-block .card-wrapper span {
+  display: block;
+  margin-block: 0.5rem;
+  font-size: 25px;
+  font-weight: 500;
+  color: #303030;
+  transition: all 0.3s ease;
+}
+
+.cards-block .card-wrapper p {
+  font-size: 16px;
+  color: #303030;
+  transition: all 0.3s ease;
+}
+
+.cards-block .card-wrapper:hover {
+  background-color: #f7941d;
+  transform: scale(1);
+}
+
+.cards-block .card-wrapper:hover i {
+  color: #fff;
+}
+
+.cards-block .card-wrapper:hover span {
+  color: #fff;
+}
+.cards-block .card-wrapper:hover p {
+  color: #fff;
+}
+.multaqa-goals-block span {
+  font-size: 30px;
+  font-weight: 500;
+  color: #000;
+}
+.multaqa-goals-block h2 {
+  font-size: 4rem;
+  font-weight: 500;
+  color: #2db473;
+}
+.multaqa-goals-block ul {
+  list-style: none;
+  margin-top: 2rem;
+}
+.multaqa-goals-block ul li {
+  margin-bottom: 1.5rem;
+  font-size: 20px;
+}
+.multaqa-goals-block ul li i {
+  color: #f7941d;
+  margin-inline-end: 10px;
+}
+.multaqa-goals-block ul li p {
+  display: inline;
+  color: #303030;
+}
+.workshop-block h2,
+.success-partners-block h2 {
+  font-size: 4rem;
+  font-weight: 500;
+  color: #2db473;
+  text-align: center;
+}
+.workshop-block .card {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  transform: scale(0.9);
+  transition: all 0.3s ease;
+}
+.workshop-block .card:hover {
+  transform: scale(1);
+}
+.workshop-block .card .ribbon {
+  position: absolute;
+  top: 40px;
+  left: -15px;
+  width: 280px;
+  height: 50px;
+  background-image: linear-gradient(257deg, #fad961, #f76b1c);
+  border-radius: 30px;
+  border-bottom-left-radius: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+}
+.workshop-block .card .ribbon::before {
+  content: "";
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 15px;
+  height: 30px;
+  background-color: #e07d04;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+  z-index: 2;
+}
+.workshop-block .card .ribbon::after {
+  content: "";
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  background-color: #f76b1c;
+  z-index: 1;
+}
+.workshop-block ul {
+  position: absolute;
+  top: 8rem;
+  right: 1rem;
+  list-style: none;
+}
+.workshop-block ul li {
+  padding-bottom: 2rem;
+}
+.workshop-block ul li i {
+  font-size: 20px;
+  color: #2db473;
+  margin-inline-end: 10px;
+}
+.workshop-block ul li span {
+  font-size: 18px;
+  color: #000;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  margin-top: 2rem;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 150px;
+  height: 100%;
+  object-fit: cover;
+  filter: gray;
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+  transform: scale(1);
+  transition: all 0.3s ease;
+}
+.swiper-slide img:hover {
+  -webkit-filter: grayscale(0);
+  filter: none;
+  transform: scale(1.1);
+}
+
+.contact-us-block h2 {
+  font-size: 4rem;
+  font-weight: 500;
+  color: #2db473;
+  text-align: center;
+  margin-top: 2rem;
+}
+.contact-us-block h5 {
+  color: #adb5bd;
+  font-size: 20px;
+  text-align: center;
+}
+.contact-us-block .contact-info .contact-info-card {
+  width: 100%;
+  height: 6rem;
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  position: relative;
+  margin-bottom: 2rem;
+  transition: all 0.3s ease;
+}
+.contact-us-block .contact-info .contact-info-card:hover {
+  transform: translateY(-5px);
+}
+.contact-us-block .contact-info .contact-info-card .icon-circle {
+  width: 3rem;
+  height: 3rem;
+  position: absolute;
+  background-color: rgb(247 148 29 / 30%);
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 1rem;
+}
+.contact-us-block .contact-info .contact-info-card .icon-circle i {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #f7941d;
+  font-size: 20px;
+}
+.contact-us-block .contact-info .contact-info-card .text {
+  position: absolute;
+  top: 1.5rem;
+  right: 5rem;
+}
+.contact-us-block .contact-info .contact-info-card .text h6 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #495057;
+  margin-bottom: 0;
+}
+.contact-us-block .contact-info .contact-info-card .text span {
+  color: #adb5bd;
+  font-size: 15px;
+  font-weight: 600;
+}
+.contact-us-block .contact-form {
+  width: 100%;
+  height: 92%;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  border-radius: 1rem;
+}
+.contact-us-block .contact-form h6 {
+  color: #f7941d;
+  font-size: 25px;
+  font-weight: 600;
+  padding: 2rem 1rem 2rem 2rem;
+}
+.contact-us-block .contact-form .forms-input {
+  padding-inline: 1rem;
+}
+.contact-us-block .contact-form .forms-input label {
+  color: #495057;
+  font-size: 18px;
+  font-weight: 500;
+}
+.contact-us-block .contact-form .forms-input input {
+  outline: none;
+  border: none;
+  background-color: #dddddd69;
+}
+.contact-us-block .contact-form .forms-input input:focus {
+  outline: none;
+  border: none;
+  box-shadow: none;
+}
+.contact-us-block .contact-form .forms-input input::placeholder {
+  color: rgb(204, 200, 200);
+}
+textarea.form-control {
+  outline: none;
+  border: none;
+  box-shadow: none;
+  background-color: #dddddd69;
+  resize: none;
+}
+textarea.form-control:focus {
+  outline: none;
+  border: none;
+  box-shadow: none;
+  background-color: #dddddd69;
+  resize: none;
+}
+textarea.form-control::placeholder {
+  color: rgb(204, 200, 200);
+}
+.contact-us-block .contact-form button {
+  background: #f7941d;
+  margin-inline-start: 1rem;
+  padding: 0.5rem 1rem;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  border: none;
+  outline: none;
+}
+.contact-us-block .contact-form button:hover,
+button:active {
+  background: #e07d04;
+  box-shadow: none;
+  border: none;
+  outline: none;
+}
+.contact-us-block .contact-form button .fa-paper-plane {
+  transition: all 0.3s ease;
+  margin-inline-end: 5px;
+}
+.contact-us-block .contact-form button:hover .fa-paper-plane {
+  transform: translate(10px, -5px);
+}
+
+/* responsive */
+@media (max-width: 768px) {
+  label.humburger {
+    display: block;
+    margin-inline-start: 1rem;
+  }
+  nav img.logo {
+    width: 50%;
+    position: absolute;
+    left: 1rem;
+  }
+  nav ul {
+    position: fixed;
+    width: 100%;
+    top: 100px;
+    height: calc(100% - 100px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f7941d;
+    padding-left: 0;
+    overflow: scroll;
+    left: 100%;
+    transition: all 0.3s ease;
+  }
+  #toggle-humburger:checked ~ ul {
+    left: 0;
+  }
+  nav ul li {
+    display: block;
+    text-align: center;
+    padding: 15px 0;
+    line-height: 0;
+    margin-top: 2rem;
+  }
+  nav ul li a {
+    color: #fff;
+  }
+  nav ul li a {
+    color: #fff;
+  }
+  .carousel-item {
+    margin-top: 7rem;
+  }
+  .multaqa-goals-block h2 {
+    font-size: 3rem;
+  }
+  .workshop-block h2,
+  .success-partners-block h2 {
+    font-size: 3rem;
+  }
+  .workshop-block .card {
+    height: 320px;
+  }
+  .contact-us-block h2 {
+    font-size: 3rem;
+  }
+  .contact-us-block h5 {
+    font-size: 18px;
+  }
+  .swiper-slide img {
+    width: 50%;
+  }
+}
+@media (max-width: 425px) {
+  .contact-us-block .contact-form {
+    height: 105%;
+  }
+}
