@@ -1,74 +1,117 @@
 .profile-block {
-    position: relative;
-    .profile-header {
-      display: flex;
-      align-items: center;
-      width: 16rem;
-      .profile-pic-wrapper {
-        position: relative;
-        width: 60px;
-        height: 60px;
-        border-radius: 50%;
-        overflow: hidden;
-        cursor: pointer;
-        img {
-          position: absolute;
-          top: 0;
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-        }
-      }
-      h2 {
-        margin-inline-start: 15px;
-        font-size: 1.2rem;
-        font-weight: 600;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        width: 100%;
-        overflow: hidden;
-        span {
-          font-size: 1rem;
-          font-weight: 600;
-          color: #999;
-        }
-      }
-    }
-    .profile-body {
-      position: absolute;
-      width: 195px;
-      height: 0;
-      box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
-        rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
-      top: 4.4rem;
-      border-radius: 0 0 6px 6px;
+  position: relative;
+  .profile-header {
+    display: flex;
+    align-items: center;
+    width: 16rem;
+    .profile-pic-wrapper {
+      position: relative;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
       overflow: hidden;
-      z-index: -1;
-      transition: all 0.4s ease;
-      ul.navigation {
-        position: relative;
-        padding-left: 0;
-        li {
-          list-style: none;
-          margin: 15px 0;
-          display: flex;
-          align-items: center;
-          transition: all 0.4s ease;
-          cursor: pointer;
-          a {
-            text-decoration: none;
-            font-style: 0.5rem;
-            transition: all 0.4s ease;
-          }
-          i {
-            font-size: 1.2rem;
-            margin-inline: 15px;
-          }
-        }
+      cursor: pointer;
+      img {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
       }
     }
-    #toggle:checked ~ .profile-body {
-      height: 160px;
-      opacity: 1;
+    h2 {
+      margin-inline-start: 15px;
+      font-size: 1.2rem;
+      font-weight: 600;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      width: 100%;
+      overflow: hidden;
+      span {
+        font-size: 1rem;
+        font-weight: 600;
+        color: #999;
+      }
     }
   }
+  .profile-body {
+    position: absolute;
+    width: 195px;
+    height: 0;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+      rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    top: 4.4rem;
+    border-radius: 0 0 6px 6px;
+    overflow: hidden;
+    z-index: -1;
+    transition: all 0.4s ease;
+    ul.navigation {
+      position: relative;
+      padding-left: 0;
+      li {
+        list-style: none;
+        margin: 15px 0;
+        display: flex;
+        align-items: center;
+        transition: all 0.4s ease;
+        cursor: pointer;
+        a {
+          text-decoration: none;
+          font-style: 0.5rem;
+          transition: all 0.4s ease;
+        }
+        i {
+          font-size: 1.2rem;
+          margin-inline: 15px;
+        }
+      }
+    }
+  }
+  #toggle:checked ~ .profile-body {
+    height: 160px;
+    opacity: 1;
+  }
+}
+
+.footer {
+  width: 100%;
+  background-color: #158285;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 3px rgba(0,0,0,0.3);
+  padding: .5rem;
+  .social-media {
+    margin-block: .5rem;
+    ul {
+      margin-bottom: 0;
+      display: flex;
+      li {
+        list-style: none;
+        width: 1.5rem;
+        height: 1.5rem;
+        background-color: #fff;
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
+        margin-inline-end: 15px;
+        box-shadow: 0px 2px rgba(0 0 0 / 50%);
+        transition: all 0.3s ease;
+        &:hover {
+          transform: translateY(-8px);
+        }
+        cursor: pointer;
+        a {
+          i {
+            color: #158285;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+  span {
+    color: #fff;
+  }
+}
