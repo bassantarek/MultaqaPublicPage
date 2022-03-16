@@ -1,0 +1,25 @@
+button.join {
+  background-color: #158285;
+  color: #fff;
+}
+
+button.join:active, button.join:focus {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+.header-labeled {
+  display: inline-block;
+  color: #fff;
+  padding: 0.5rem 0.5rem 0.5rem 1rem;
+  font-size: 18px;
+  background: -webkit-gradient(linear, left top, right top, from(#2e9295), to(#158285));
+  background: linear-gradient(90deg, #2e9295 0%, #158285 100%);
+  background: #2e9295;
+  border-radius: 2rem 0 0 2rem;
+  -webkit-margin-start: -1.3rem;
+          margin-inline-start: -1.3rem;
+  -webkit-box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+          box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+/*# sourceMappingURL=workshop-details.css.map */

@@ -1,0 +1,31 @@
+.card {
+  border-radius: 1rem;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  .card-header {
+    border-bottom: none;
+    border-radius: 1rem 1rem 0 0;
+    color: #158285;
+    text-align: center;
+  }
+  .card-body {
+      dd {
+          span.badge {
+            white-space: break-spaces;
+          }
+      }
+  }
+  .card-footer {
+    border-top: none;
+    border-radius: 0 0 1rem 1rem;
+    background-color: #158285;
+    text-align: center;
+    transition: all 0.3s;
+    button,span {
+      color: #fff;
+    }
+    &:hover {
+      background-color: #0d575a;
+    }
+  }
+}
