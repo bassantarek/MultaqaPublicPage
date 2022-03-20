@@ -21,12 +21,15 @@
     background-color: #158285;
     text-align: center;
     transition: all 0.3s;
+    &.face-online {
+      background: linear-gradient(90deg, #2bb574 50%, #f7941d 50%);
+    }
     button,span {
       color: #fff;
     }
-    &:hover {
-      background-color: #0d575a;
-    }
+    // &:hover {
+    //   background-color: #0d575a;
+    // }
   }
 }
 input[type="checkbox"].customed-checkbox {
