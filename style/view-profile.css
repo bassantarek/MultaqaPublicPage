@@ -1,0 +1,79 @@
+button {
+  background-color: #158285;
+  color: #FFF;
+}
+
+button:active, button:focus {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+.profile-img-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.profile-img-block .profile-img-wrapper {
+  position: relative;
+  margin-bottom: 4rem;
+}
+
+.profile-img-block .profile-img-wrapper img {
+  border-radius: 50%;
+}
+
+.profile-img-block .username {
+  position: absolute;
+  color: #158285;
+  bottom: 0;
+}
+
+dl dt {
+  color: #158285;
+}
+
+dl dd ul.circled-items {
+  list-style: none;
+}
+
+dl dd ul.circled-items li {
+  display: inline-block;
+  width: auto;
+  padding: 2px 10px;
+  border-radius: 15px;
+  color: #fff;
+  -webkit-margin-end: 5px;
+          margin-inline-end: 5px;
+  margin-bottom: 5px;
+}
+
+dl dd ul.circled-items li i {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+dl dd ul.circled-items li i:hover {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+dl dd .orange-bg {
+  background-color: #f7941d;
+}
+
+dl dd .teal-bg {
+  background-color: #158285;
+}
+
+dl dd .green-bg {
+  background-color: #2bb574;
+}
+/*# sourceMappingURL=view-profile.css.map */

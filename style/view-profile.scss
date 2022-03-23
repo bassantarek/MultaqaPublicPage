@@ -1,0 +1,61 @@
+button {
+  background-color:#158285;
+  color: #FFF;
+  &:active,
+  &:focus {
+    box-shadow: none !important;
+  }
+}
+.profile-img-block {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  .profile-img-wrapper {
+    position: relative;
+    margin-bottom: 4rem;
+    img {
+      border-radius: 50%;
+    }
+  }
+  .username {
+    position: absolute;
+    color: #158285;
+    bottom: 0;
+  }
+}
+dl {
+  dt {
+    color: #158285;
+  }
+  dd {
+    ul.circled-items {
+      list-style: none;
+      li {
+        display: inline-block;
+        width: auto;
+        padding: 2px 10px;
+        border-radius: 15px;
+        color: #fff;
+        margin-inline-end: 5px;
+        margin-bottom: 5px;
+        i {
+          transform: scale(0.9);
+          transition: all 0.3s ease-in-out;
+          cursor: pointer;
+          &:hover {
+            transform: scale(1);
+          }
+        }
+      }
+    }
+    .orange-bg {
+      background-color: #f7941d;
+    }
+    .teal-bg {
+      background-color: #158285;
+    }
+    .green-bg {
+      background-color: #2bb574;
+    }
+  }
+}

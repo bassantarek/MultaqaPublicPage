@@ -272,7 +272,7 @@
 }
 
 .header .notification-lang-profile-block .profile-block #toggle:checked ~ .profile-body {
-  height: 60px;
+  height: 6rem;
   opacity: 1;
 }
 
